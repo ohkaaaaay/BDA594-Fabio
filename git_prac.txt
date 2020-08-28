@@ -1,3 +1,5 @@
 #Placeholder text file to practice Git and GitHub.
 
-#This line will not be seen in the "branch" branch until it's merged.
+#Practicing dealing with a merge conflict
+
+#Practicing Visual Studio Code
