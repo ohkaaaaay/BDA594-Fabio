@@ -1,5 +1,5 @@
 #Placeholder text file to practice Git and GitHub.
 
-#Practicing creating merge conflict (Attempt #4)
+#Practicing creating merge conflict. Attempt #4 successful!
 
 #Practicing Visual Studio Code
