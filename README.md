@@ -3,9 +3,6 @@ This folder contains projects from my BDA-594 course at San Diego State Universi
 
 **BDA 594** - Big Data Science and Analytics Platforms<br>
 Big data science to include analysis, data collection, filtering, GIS, machine learning, processing, text analysis, and visualization. Computational platforms, skills, and tools for conducting big data analytics with real world case studies and examples.
-## Name
-
-## URL to BDA/GEO594 Class
 
 ## Table of Contents
 - [Matplotlib_Demo](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Matplotlib_Demo): This folder contains two I-Python notebooks that demostrates the Matplotlib data visualization tool.
