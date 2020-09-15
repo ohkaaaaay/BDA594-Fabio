@@ -21,6 +21,6 @@ The size of "big data" can be subjective. However, collecting data may not be an
 
 Lastly, analyzing the data is necessary to gain a conclusion. Trends may be observed and more questions may come up to continue studying further.
 
-## Wordcloud of Big Data
+## Word Cloud of Big Data
 Big data definitions gathered from the BDA-594 class:
 ![BigData-Definition-V2.png](https://github.com/ohkaaaaay/BDA594-Fabio/blob/master/Web_Exercises/WebExercise2_R/BigData-Definition-V2.png)
