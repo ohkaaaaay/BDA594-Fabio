@@ -1,0 +1,1918 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0801.1333)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='COVID-19_Statistics-San_Diego_County' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='COVID-19_Statistics-San_Diego_County' inline='true' name='federated.0caixnj05jv1rt197z1ym0s2u6rv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID-19_Statistics-San_Diego_County' name='textscan.17vxfsh135pj6m12jigo60lcs6q4'>
+            <connection class='textscan' directory='/Users/elizabethfabio/Documents/My Tableau Repository/Datasources' filename='COVID-19_Statistics-San_Diego_County.csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.17vxfsh135pj6m12jigo60lcs6q4' name='COVID-19_Statistics-San_Diego_County.csv' table='[COVID-19_Statistics-San_Diego_County#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='the_geom' ordinal='0' />
+            <column datatype='integer' name='OBJECTID' ordinal='1' />
+            <column datatype='date' date-parse-format='MM/dd/yyyy hh:mm:ss a Z' name='Date' ordinal='2' />
+            <column datatype='integer' name='Tests' ordinal='3' />
+            <column datatype='integer' name='Positives' ordinal='4' />
+            <column datatype='integer' name='Hospitalized' ordinal='5' />
+            <column datatype='integer' name='ICU' ordinal='6' />
+            <column datatype='integer' name='Deaths' ordinal='7' />
+            <column datatype='integer' name='New Cases' ordinal='8' />
+            <column datatype='integer' name='Age 0-9' ordinal='9' />
+            <column datatype='integer' name='Age 10-19' ordinal='10' />
+            <column datatype='integer' name='Age 40-49' ordinal='11' />
+            <column datatype='integer' name='Age 50-59' ordinal='12' />
+            <column datatype='integer' name='Age 60-69' ordinal='13' />
+            <column datatype='integer' name='Age 70-79' ordinal='14' />
+            <column datatype='integer' name='Age 80+' ordinal='15' />
+            <column datatype='integer' name='Age Unknow' ordinal='16' />
+            <column datatype='integer' name='Age 20-29' ordinal='17' />
+            <column datatype='integer' name='Gender Female' ordinal='18' />
+            <column datatype='integer' name='Gender Male' ordinal='19' />
+            <column datatype='integer' name='Gender Unknown' ordinal='20' />
+            <column datatype='integer' name='Age 30-39' ordinal='21' />
+            <column datatype='string' name='globalid' ordinal='22' />
+            <column datatype='integer' name='New Tests' ordinal='23' />
+            <column datatype='real' name='Rolling Average Percentage of Positive Cases Among Tests (14 day period) ' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.17vxfsh135pj6m12jigo60lcs6q4' name='COVID-19_Statistics-San_Diego_County.csv' table='[COVID-19_Statistics-San_Diego_County#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='the_geom' ordinal='0' />
+            <column datatype='integer' name='OBJECTID' ordinal='1' />
+            <column datatype='date' date-parse-format='MM/dd/yyyy hh:mm:ss a Z' name='Date' ordinal='2' />
+            <column datatype='integer' name='Tests' ordinal='3' />
+            <column datatype='integer' name='Positives' ordinal='4' />
+            <column datatype='integer' name='Hospitalized' ordinal='5' />
+            <column datatype='integer' name='ICU' ordinal='6' />
+            <column datatype='integer' name='Deaths' ordinal='7' />
+            <column datatype='integer' name='New Cases' ordinal='8' />
+            <column datatype='integer' name='Age 0-9' ordinal='9' />
+            <column datatype='integer' name='Age 10-19' ordinal='10' />
+            <column datatype='integer' name='Age 40-49' ordinal='11' />
+            <column datatype='integer' name='Age 50-59' ordinal='12' />
+            <column datatype='integer' name='Age 60-69' ordinal='13' />
+            <column datatype='integer' name='Age 70-79' ordinal='14' />
+            <column datatype='integer' name='Age 80+' ordinal='15' />
+            <column datatype='integer' name='Age Unknow' ordinal='16' />
+            <column datatype='integer' name='Age 20-29' ordinal='17' />
+            <column datatype='integer' name='Gender Female' ordinal='18' />
+            <column datatype='integer' name='Gender Male' ordinal='19' />
+            <column datatype='integer' name='Gender Unknown' ordinal='20' />
+            <column datatype='integer' name='Age 30-39' ordinal='21' />
+            <column datatype='string' name='globalid' ordinal='22' />
+            <column datatype='integer' name='New Tests' ordinal='23' />
+            <column datatype='real' name='Rolling Average Percentage of Positive Cases Among Tests (14 day period) ' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>the_geom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[the_geom]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>the_geom</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tests]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Tests</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Positives]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Positives</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospitalized</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hospitalized]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Hospitalized</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICU</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ICU]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>ICU</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Cases]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>New Cases</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 0-9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 0-9]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 0-9</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 10-19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 10-19]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 10-19</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 40-49</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 40-49]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 40-49</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 50-59</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 50-59]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 50-59</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 60-69</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 60-69]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 60-69</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 70-79</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 70-79]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 70-79</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 80+</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 80+]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 80+</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Unknow</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age Unknow]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age Unknow</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 20-29</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 20-29]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 20-29</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender Female</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender Female]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Gender Female</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender Male</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender Male]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Gender Male</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender Unknown</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender Unknown]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Gender Unknown</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 30-39</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age 30-39]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Age 30-39</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>globalid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[globalid]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>globalid</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Tests]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>New Tests</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rolling Average Percentage of Positive Cases Among Tests (14 day period) </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rolling Average Percentage of Positive Cases Among Tests (14 day period) ]</local-name>
+            <parent-name>[COVID-19_Statistics-San_Diego_County.csv]</parent-name>
+            <remote-alias>Rolling Average Percentage of Positive Cases Among Tests (14 day period) </remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 0-9:qk]&quot;' value='Age 0-9' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 10-19:qk]&quot;' value='Age 10-19' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 20-29:qk]&quot;' value='Age 20-29' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 30-39:qk]&quot;' value='Age 30-39' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 40-49:qk]&quot;' value='Age 40-49' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 50-59:qk]&quot;' value='Age 50-59' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 60-69:qk]&quot;' value='Age 60-69' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 70-79:qk]&quot;' value='Age 70-79' />
+          <alias key='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 80+:qk]&quot;' value='Age 80+' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Age 0-9]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 10-19]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 20-29]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 30-39]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 40-49]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 50-59]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 60-69]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 70-79]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Age 80+]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Positives]' role='measure' type='quantitative' />
+      <column caption='Rolling Average Percentage of Positive Cases Among Tests (14 day period)' datatype='real' name='[Rolling Average Percentage of Positive Cases Among Tests (14 day period) ]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='COVID-19_Statistics-San_Diego_County.csv' datatype='table' name='[__tableau_internal_object_id__].[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]' role='measure' type='quantitative' />
+      <column caption='Globalid' datatype='string' name='[globalid]' role='dimension' type='nominal' />
+      <column caption='The Geom' datatype='string' name='[the_geom]' role='dimension' type='nominal' />
+      <column-instance column='[Age 0-9]' derivation='Avg' name='[avg:Age 0-9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deaths]' derivation='Sum' forecast-column-base='[sum:Deaths:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Positives]' derivation='Sum' forecast-column-base='[sum:Positives:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Positives:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 0-9]' derivation='Max' name='[max:Age 0-9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 10-19]' derivation='Max' name='[max:Age 10-19:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 20-29]' derivation='Max' name='[max:Age 20-29:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 30-39]' derivation='Max' name='[max:Age 30-39:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 40-49]' derivation='Max' name='[max:Age 40-49:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 50-59]' derivation='Max' name='[max:Age 50-59:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 60-69]' derivation='Max' name='[max:Age 60-69:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 70-79]' derivation='Max' name='[max:Age 70-79:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 80+]' derivation='Max' name='[max:Age 80+:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Age 0-9]' derivation='Sum' name='[sum:Age 0-9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 10-19]' derivation='Sum' name='[sum:Age 10-19:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 20-29]' derivation='Sum' name='[sum:Age 20-29:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 30-39]' derivation='Sum' name='[sum:Age 30-39:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 40-49]' derivation='Sum' name='[sum:Age 40-49:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 50-59]' derivation='Sum' name='[sum:Age 50-59:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 60-69]' derivation='Sum' name='[sum:Age 60-69:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 70-79]' derivation='Sum' name='[sum:Age 70-79:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age 80+]' derivation='Sum' name='[sum:Age 80+:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Positives]' derivation='Sum' name='[sum:Positives:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/elizabethfabio/Documents/My Tableau Repository/Datasources/COVID-19_Statistics-San_Diego_County.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/22/2020 04:51:10 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='COVID-19_Statistics-San_Diego_County' increment-value='%null%' refresh-type='create' rows-inserted='197' timestamp-start='2020-09-22 04:51:10.300' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>the_geom</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[the_geom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>the_geom</remote-alias>
+              <ordinal>0</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OBJECTID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OBJECTID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OBJECTID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tests</remote-alias>
+              <ordinal>3</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>193</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Positives</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Positives]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Positives</remote-alias>
+              <ordinal>4</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>196</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospitalized</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hospitalized]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospitalized</remote-alias>
+              <ordinal>5</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>191</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ICU</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ICU]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ICU</remote-alias>
+              <ordinal>6</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Cases</remote-alias>
+              <ordinal>8</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 0-9</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 0-9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 0-9</remote-alias>
+              <ordinal>9</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 10-19</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 10-19]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 10-19</remote-alias>
+              <ordinal>10</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 40-49</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 40-49]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 40-49</remote-alias>
+              <ordinal>11</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 50-59</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 50-59]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 50-59</remote-alias>
+              <ordinal>12</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 60-69</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 60-69]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 60-69</remote-alias>
+              <ordinal>13</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 70-79</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 70-79]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 70-79</remote-alias>
+              <ordinal>14</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 80+</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 80+]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 80+</remote-alias>
+              <ordinal>15</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age Unknow</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age Unknow]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age Unknow</remote-alias>
+              <ordinal>16</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 20-29</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 20-29]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 20-29</remote-alias>
+              <ordinal>17</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender Female</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender Female]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender Female</remote-alias>
+              <ordinal>18</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender Male</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender Male]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender Male</remote-alias>
+              <ordinal>19</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender Unknown</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender Unknown]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender Unknown</remote-alias>
+              <ordinal>20</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age 30-39</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age 30-39]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age 30-39</remote-alias>
+              <ordinal>21</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>globalid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[globalid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>globalid</remote-alias>
+              <ordinal>22</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Tests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Tests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Tests</remote-alias>
+              <ordinal>23</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rolling Average Percentage of Positive Cases Among Tests (14 day period) </remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rolling Average Percentage of Positive Cases Among Tests (14 day period) ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rolling Average Percentage of Positive Cases Among Tests (14 day period) </remote-alias>
+              <ordinal>24</ordinal>
+              <family>COVID-19_Statistics-San_Diego_County.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 60-69:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 60-69:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[avg:Age 0-9:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 0-9:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 0-9:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Positives:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 40-49:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 40-49:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 20-29:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 20-29:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 50-59:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 50-59:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 80+:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 80+:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 10-19:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 10-19:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 70-79:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 70-79:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Positives:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 30-39:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[sum:Age 30-39:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='COVID-19_Statistics-San_Diego_County.csv' id='COVID-19_Statistics-San_Diego_County.csv_4EBBE4E07985464EBA443EB4285EFE19'>
+            <properties context=''>
+              <relation connection='textscan.17vxfsh135pj6m12jigo60lcs6q4' name='COVID-19_Statistics-San_Diego_County.csv' table='[COVID-19_Statistics-San_Diego_County#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='the_geom' ordinal='0' />
+                  <column datatype='integer' name='OBJECTID' ordinal='1' />
+                  <column datatype='date' date-parse-format='MM/dd/yyyy hh:mm:ss a Z' name='Date' ordinal='2' />
+                  <column datatype='integer' name='Tests' ordinal='3' />
+                  <column datatype='integer' name='Positives' ordinal='4' />
+                  <column datatype='integer' name='Hospitalized' ordinal='5' />
+                  <column datatype='integer' name='ICU' ordinal='6' />
+                  <column datatype='integer' name='Deaths' ordinal='7' />
+                  <column datatype='integer' name='New Cases' ordinal='8' />
+                  <column datatype='integer' name='Age 0-9' ordinal='9' />
+                  <column datatype='integer' name='Age 10-19' ordinal='10' />
+                  <column datatype='integer' name='Age 40-49' ordinal='11' />
+                  <column datatype='integer' name='Age 50-59' ordinal='12' />
+                  <column datatype='integer' name='Age 60-69' ordinal='13' />
+                  <column datatype='integer' name='Age 70-79' ordinal='14' />
+                  <column datatype='integer' name='Age 80+' ordinal='15' />
+                  <column datatype='integer' name='Age Unknow' ordinal='16' />
+                  <column datatype='integer' name='Age 20-29' ordinal='17' />
+                  <column datatype='integer' name='Gender Female' ordinal='18' />
+                  <column datatype='integer' name='Gender Male' ordinal='19' />
+                  <column datatype='integer' name='Gender Unknown' ordinal='20' />
+                  <column datatype='integer' name='Age 30-39' ordinal='21' />
+                  <column datatype='string' name='globalid' ordinal='22' />
+                  <column datatype='integer' name='New Tests' ordinal='23' />
+                  <column datatype='real' name='Rolling Average Percentage of Positive Cases Among Tests (14 day period) ' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Deaths &amp; Positives' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Forecast Indicator' />
+        <param name='target' value='Deaths &amp; Positives' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Total Cases by Age Group</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>The total number of COVID-19 cases in San Diego County as of September 19, 2020 grouped by age. The average is applied as a reference line.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19_Statistics-San_Diego_County' name='federated.0caixnj05jv1rt197z1ym0s2u6rv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0caixnj05jv1rt197z1ym0s2u6rv'>
+            <column datatype='integer' name='[Age 0-9]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 10-19]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 20-29]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 30-39]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 40-49]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 50-59]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 60-69]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 70-79]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Age 80+]' role='measure' type='quantitative' />
+            <column-instance column='[Age 0-9]' derivation='Max' name='[max:Age 0-9:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 10-19]' derivation='Max' name='[max:Age 10-19:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 20-29]' derivation='Max' name='[max:Age 20-29:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 30-39]' derivation='Max' name='[max:Age 30-39:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 40-49]' derivation='Max' name='[max:Age 40-49:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 50-59]' derivation='Max' name='[max:Age 50-59:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 60-69]' derivation='Max' name='[max:Age 60-69:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 70-79]' derivation='Max' name='[max:Age 70-79:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age 80+]' derivation='Max' name='[max:Age 80+:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 0-9:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 10-19:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 20-29:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 30-39:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 40-49:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 50-59:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 60-69:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 70-79:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 80+:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 0-9:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 10-19:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 20-29:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 30-39:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 40-49:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 50-59:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 60-69:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 70-79:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 80+:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]' scope='rows' value='Number of Positive Cases' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='text-align' id='refline1' value='right' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='vertical-align' id='refline0' value='top' />
+            <format attr='vertical-align' id='refline1' value='bottom' />
+            <format attr='font-size' id='refline0' value='8' />
+            <format attr='font-size' id='refline1' value='8' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dotted' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]' enable-instant-analytics='true' formula='average' id='refline0' label='&lt;Computation&gt;: &lt;Value&gt;' label-type='custom' probability='95' scope='per-table' value-column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]</rows>
+        <cols>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{EE5DC8E6-22E7-4C47-B7E2-14EF3A511132}' />
+    </worksheet>
+    <worksheet name='Deaths &amp; Positives'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Cumulative Deaths and Positive Cases</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>The cumulative deaths and positive cases in San Diego County are displayed daily from March 7, 2020 to September 19, 2020. A forecasting model was applied to predict with 95% confidence the number of total deaths and positive cases in the next month.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19_Statistics-San_Diego_County' name='federated.0caixnj05jv1rt197z1ym0s2u6rv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0caixnj05jv1rt197z1ym0s2u6rv'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Positives]' role='measure' type='quantitative' />
+            <column-instance column='[Deaths]' derivation='Sum' forecast-column-base='[sum:Deaths:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Positives]' derivation='Sum' forecast-column-base='[sum:Positives:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Positives:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Positives]' derivation='Sum' name='[sum:Positives:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[tdy:Date:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tdy:Date:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[tdy:Date:ok]' member='#2020-03-07 00:00:00#' />
+                <groupfilter function='member' level='[tdy:Date:ok]' member='#2020-03-08 00:00:00#' />
+                <groupfilter function='member' level='[tdy:Date:ok]' member='#2020-03-09 00:00:00#' />
+                <groupfilter function='member' level='[tdy:Date:ok]' member='#2020-03-10 00:00:00#' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[tdy:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Positives:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Positives:qk]' scope='rows' value='Positive Cases' />
+            <format attr='title' class='0' field='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[tdy:Date:qk]' scope='cols' value='Day' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]' />
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]' />
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Positives:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]' />
+              <color column='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Deaths:qk] + [federated.0caixnj05jv1rt197z1ym0s2u6rv].[fVal:sum:Positives:qk])</rows>
+        <cols>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[tdy:Date:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Month-Trunc' range-size='1' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{A29E3DDD-3C73-407C-B13E-1809BE9900C7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='SD COVID-19 Stats'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>San Diego County COVID-19 Statistics (As of September 19, 2020)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4625' id='12' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93375' id='7' param='horz' w='98400' x='800' y='5625'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93375' id='5' w='98400' x='800' y='5625'>
+                <zone h='46687' id='3' name='Deaths &amp; Positives' show-caption='true' w='98400' x='800' y='5625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46688' id='9' name='Age Group' show-caption='true' w='98400' x='800' y='52312'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontsize='16'>San Diego County COVID-19 Statistics (As of September 19, 2020)</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='22' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='21' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4625' id='12' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46687' id='3' is-fixed='true' name='Deaths &amp; Positives' show-caption='true' w='98400' x='800' y='5625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46688' id='9' is-fixed='true' name='Age Group' show-caption='true' w='98400' x='800' y='52312'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D35AADAE-465B-41EF-9B70-F96B826EF72B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Deaths &amp; Positives'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]&#10;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</field>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Date - Split 1:nk]</field>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Date:nk]</field>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]</field>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{98FF9430-02F0-437A-B6F0-2B86EC14CEF4}' />
+    </window>
+    <window class='worksheet' name='Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</field>
+            <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{93AF3B25-10E4-4A7A-88D8-128BABEF21CD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='SD COVID-19 Stats'>
+      <viewpoints>
+        <viewpoint name='Age Group'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]</field>
+                    <field>[federated.0caixnj05jv1rt197z1ym0s2u6rv].[Multiple Values]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[max:Age 20-29:qk]&quot;</value>
+                  <value>11260.0</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Deaths &amp; Positives'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0caixnj05jv1rt197z1ym0s2u6rv].[:Measure Names]&#10;[federated.0caixnj05jv1rt197z1ym0s2u6rv].[none:Forecast Indicator:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{355C7C0C-B66B-42DB-982B-E78B26DC8CFA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Age Group' width='192'>
+      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
+      G9sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Deaths &amp; Positives' width='192'>
+      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
+      UkH7f0WB74YT7upLAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='SD COVID-19 Stats' width='192'>
+      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
+      38YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
