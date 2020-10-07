@@ -9,8 +9,9 @@ Big data science to include analysis, data collection, filtering, GIS, machine l
   - [Matplotlib_Demo.ipynb](https://github.com/ohkaaaaay/BDA594-Fabio/blob/master/Matplotlib_Demo/Matplotlib_Demo.ipynb) Contains the Matplotlib demo with no answers to practice on.
   - [Matplotlib_Demo_Answers.ipynb](https://github.com/ohkaaaaay/BDA594-Fabio/blob/master/Matplotlib_Demo/Matplotlib_Demo_Answers.ipynb): Contains the Matplotlib demo with the answers.
 - [Web_Exercises](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises): This folder contains the web exercises for this course.
-  - [WebExercise1_GitHub](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise1_GitHub): This web exercise contains files related to learning GitHub.
-  - [WebExercise2_R](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise2_R): This web exercise contains files related to learning R and R Studio.
+  - [WebExercise_1_GitHub](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise1_GitHub): This web exercise contains files related to learning GitHub.
+  - [WebExercise_2_R](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise2_R): This web exercise contains files related to learning R and R Studio.
+  - [WebExercise_3_Tableau](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise3_Tableau): This web exercise contains Tableau workbooks and images exported from them. To view my published Tableau workbooks, check out my [Tableau Public account](https://public.tableau.com/profile/elizabeth.fabio#!/).
 
 ## My Definition of Big Data
 With this day and age, data is increasing exponentially. Big data simply can be described as the process in collecting, processing, and analyzing data.
