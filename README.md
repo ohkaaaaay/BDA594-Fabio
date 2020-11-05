@@ -13,7 +13,8 @@ Big data science to include analysis, data collection, filtering, GIS, machine l
   - [WebExercise_2_R](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise2_R): This web exercise contains files related to learning R and R Studio.
   - [WebExercise_3_Tableau](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise3_Tableau): This web exercise contains Tableau workbooks and images exported from them. To view my published Tableau workbooks, check out my [Tableau Public account](https://public.tableau.com/profile/elizabeth.fabio#!/).
   - [WebExercise_4_AWS](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise4_AWS): This web exercise contains files related to using AWS, MongoDB, and the Twitter API. 
-  - [WebExercise_5_ArcGISOnline](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise5_ArcGISOnline): This web exercise explores practicing  ArcGIS along with creating HTML pages and websites.
+  - [WebExercise_5_ArcGISOnline](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise5_ArcGISOnline): This web exercise explores practicing ArcGIS along with creating HTML pages and websites.
+  - [WebExercise_6_Gephi](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise6_Gephi): This web exercise explores practicing Gephi, a network analysis visualization tool.
 
 ## My Definition of Big Data
 With this day and age, data is increasing exponentially. Big data simply can be described as the process in collecting, processing, and analyzing data.
