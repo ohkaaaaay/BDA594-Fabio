@@ -15,6 +15,7 @@ Big data science to include analysis, data collection, filtering, GIS, machine l
   - [WebExercise_4_AWS](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise4_AWS): This web exercise contains files related to using AWS, MongoDB, and the Twitter API. 
   - [WebExercise_5_ArcGISOnline](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise5_ArcGISOnline): This web exercise explores practicing ArcGIS along with creating HTML pages and websites.
   - [WebExercise_6_Gephi](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise6_Gephi): This web exercise explores practicing Gephi, a network analysis visualization tool.
+  - [WebExercise_7_Video&TopicModeling](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises/WebExercise7_TopicModel%26Video): This web exercise has two parts: (1) practice creating screen recorded videos and (2) generating topics using Latent Dirichlet Allocation (LDA) model.
 
 ## My Definition of Big Data
 With this day and age, data is increasing exponentially. Big data simply can be described as the process in collecting, processing, and analyzing data.
