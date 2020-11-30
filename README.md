@@ -5,7 +5,7 @@ This folder contains projects from my BDA-594 course at San Diego State Universi
 Big data science to include analysis, data collection, filtering, GIS, machine learning, processing, text analysis, and visualization. Computational platforms, skills, and tools for conducting big data analytics with real world case studies and examples.
 
 ## Table of Contents
-- [Matplotlib_Demo](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Matplotlib_Demo): This folder contains two I-Python notebooks that demostrates the Matplotlib data visualization tool.
+- [Matplotlib_Demo](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Matplotlib_Demo): This folder contains two IPython notebooks that demostrates the Matplotlib data visualization tool.
   - [Matplotlib_Demo.ipynb](https://github.com/ohkaaaaay/BDA594-Fabio/blob/master/Matplotlib_Demo/Matplotlib_Demo.ipynb) Contains the Matplotlib demo with no answers to practice on.
   - [Matplotlib_Demo_Answers.ipynb](https://github.com/ohkaaaaay/BDA594-Fabio/blob/master/Matplotlib_Demo/Matplotlib_Demo_Answers.ipynb): Contains the Matplotlib demo with the answers.
 - [Web_Exercises](https://github.com/ohkaaaaay/BDA594-Fabio/tree/master/Web_Exercises): This folder contains the web exercises for this course.
